@@ -7,13 +7,13 @@ import Fish from "./Fish";
 import base from "../base";
 
 class App extends React.Component {
-  //Component State
+  /* Component State */
   state = {
     fishes: {},
     order: {}
   };
 
-  //Lifecycle Methods
+  /* Lifecycle Methods */
 
   componentDidMount() {
     const { params } = this.props.match;
@@ -28,15 +28,17 @@ class App extends React.Component {
   }
 
   componentDidUpdate() {
+    //Save order into local storage on update
     const { params } = this.props.match;
     localStorage.setItem(params.storeId, JSON.stringify(this.state.order));
   }
 
   componentWillUnmount() {
+    //Remove firebase listener on unmount
     base.removeBinding(this.ref);
   }
 
-  //Custom Functions
+  /* Custom Functions */
 
   //General Structure for Custom Functions
   //1. Take a copy of state
@@ -46,6 +48,12 @@ class App extends React.Component {
   addFish = fish => {
     const fishes = { ...this.state.fishes };
     fishes[`fish${Date.now()}`] = fish;
+    this.setState({ fishes });
+  };
+
+  updateFish = (key, updatedFish) => {
+    const fishes = { ...this.state.fishes };
+    fishes[key] = updatedFish;
     this.setState({ fishes });
   };
 
@@ -78,7 +86,9 @@ class App extends React.Component {
         <Order fishes={this.state.fishes} order={this.state.order} />
         <Inventory
           addFish={this.addFish}
+          updateFish={this.updateFish}
           loadSampleFishes={this.loadSampleFishes}
+          fishes={this.state.fishes}
         />
       </div>
     );
