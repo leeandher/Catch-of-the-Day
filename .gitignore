@@ -3,5 +3,4 @@ build/
 *.zip
 .DS_Store
 .idea
-notes.md
 catch-of-the-day/src/base.js
