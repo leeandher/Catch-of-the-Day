@@ -16,7 +16,7 @@ class App extends React.Component {
 
   /* PropType Validation */
   static propTypes = {
-    match: PropTypes.object
+    match: PropTypes.object.isRequired
   };
 
   /* Lifecycle Methods */
