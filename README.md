@@ -1,6 +1,6 @@
 # Catch of the Day!
 
-Hi there, and welcome to the Catch of the Day repository! The code you'll find in here powers a single-page application developed by yours truly, in my attempt to better understand the fundamentals of **React.js**! The finished product can be found over at [catchoftheday.leander.xyz](catchoftheday.leander.xyz)!
+Hi there, and welcome to the _Catch of the Day_ repository! The code you'll find in here powers a single-page application developed by yours truly, in my attempt to better understand the fundamentals of **React.js**! The finished product can be found over at [catchoftheday.leander.xyz](catchoftheday.leander.xyz)!
 
 ## Using the app
 
@@ -22,5 +22,5 @@ The sign-in capabilities were also done through Firebase, which ensures proper *
 
 ## Creds
 
-I was able to create this application through the help of a course, developed by [Wes Bos](https://wesbos/com) entitled [React For Beginners](https://reactforbeginners.com).
+I was able to create this application through the help of a course, developed by [Wes Bos](https://wesbos.com) entitled [React For Beginners](https://reactforbeginners.com).
 If you've stumbled upon this repo, in attempt to learn React, I highly recommend his [courses](https://wesbos.com/courses) and wish you the best of luck!
