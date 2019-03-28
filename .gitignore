@@ -3,4 +3,3 @@ build/
 *.zip
 .DS_Store
 .idea
-src/base.js

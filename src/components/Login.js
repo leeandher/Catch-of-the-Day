@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from "react"
+import PropTypes from "prop-types"
 
 const Login = props => (
   <nav className="login">
@@ -14,11 +14,16 @@ const Login = props => (
     {/* <button className="facebook" onClick={() => props.authenticate("Facebook")}>
       Log in with Facebook
     </button> */}
+    <button className="guest" onClick={() => props.anonAuthenticate()}>
+      Log in as Guest <br />
+      (Deletes credentials on Logout)
+    </button>
   </nav>
-);
+)
 
 Login.propTypes = {
-  authenticate: PropTypes.func.isRequired
-};
+  authenticate: PropTypes.func.isRequired,
+  anonAuthenticate: PropTypes.func.isRequired,
+}
 
-export default Login;
+export default Login
