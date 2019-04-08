@@ -1,6 +1,6 @@
 # Catch of the Day!
 
-Hi there, and welcome to the _Catch of the Day_ repository! The code you'll find in here powers a single-page application developed by yours truly, in my attempt to better understand the fundamentals of **React.js**! The finished product can be found over at [catchoftheday.leander.xyz](https://catch-of-the-day.leander.xyz)!
+Hi there, and welcome to the _Catch of the Day_ repository! The code you'll find in here powers a single-page application developed by yours truly, in my attempt to better understand the fundamentals of **React.js**! The finished product can be found over at [catch-of-the-day.leander.xyz](https://catch-of-the-day.leander.xyz)!
 
 ## Using the app
 
